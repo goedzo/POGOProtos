@@ -16,17 +16,9 @@ message BattleResults {
 	int64 next_defender_pokemon_id = 4;
 	int32 gym_points_delta = 5;
 	.POGOProtos.Data.Gym.GymStatusAndDefenders gym_status = 6;
-<<<<<<< HEAD
 	repeated .POGOProtos.Data.Raid.Participation participation = 7;
 	repeated .POGOProtos.Inventory.Loot raid_item_rewards = 8;
 	repeated .POGOProtos.Data.Raid.RaidEncounter post_raid_encounter = 9;
 	repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;
 	repeated .POGOProtos.Inventory.Loot default_raid_item_rewards = 11;
-=======
-	repeated ParticipationProto participation = 7;
-	repeated LootProto raid_item_rewards = 8;
-	repeated RaidEncounterProto post_raid_encounter = 9;
-	repeated .POGOProtos.Data.Badge.AwardedGymBadge gym_badge = 10;
-	repeated LootProto default_raid_item_rewards = 11;
->>>>>>> refs/remotes/origin/master
 }

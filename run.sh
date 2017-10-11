@@ -27,7 +27,7 @@ if [ -d $BASE_LOCATION/pogoprotos ]; then
     rm -rf $BASE_LOCATION/pogoprotos
 fi
 
-git clone -b master https://github.com/goedzo/POGOProtos $BASE_LOCATION/pogoprotos
+git clone -b master https://github.com/nbq/POGOProtos $BASE_LOCATION/pogoprotos
 
 if [ -d $BASE_LOCATION/pogoprotos ]; then
     echo "Removing $BASE_LOCATION/pgoapi"
@@ -35,7 +35,7 @@ if [ -d $BASE_LOCATION/pogoprotos ]; then
 fi
 
 echo "Cloning Repo to $BASE_LOCATION/pgoapi"
-git clone -b 0.73.1 https://github.com/goedzo/pgoapi $BASE_LOCATION/pgoapi
+git clone -b 0.73.1 https://github.com/nbq/pgoapi $BASE_LOCATION/pgoapi
 
 echo "Copy $BASE_LOCATION/pogoprotos/run.sh to $BASE_LOCATION/run.sh"
 cp -f $BASE_LOCATION/pogoprotos/run.sh $BASE_LOCATION/run.sh

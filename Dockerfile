@@ -14,9 +14,9 @@
 
 FROM alpine
 
-ARG BUILD_REPO=goedzo/POGOProtos
+ARG BUILD_REPO=nbq/POGOProtos
 ARG BUILD_BRANCH=master
-ARG BUILD_REPO2=goedzo/pgoapi
+ARG BUILD_REPO2=nbq/pgoapi
 
 
 
@@ -92,8 +92,8 @@ RUN set -ex \
 WORKDIR /defs
 
 
-RUN git clone -b $BUILD_BRANCH https://github.com/goedzo/POGOProtos /src/pogoprotos/
-RUN git clone https://github.com/goedzo/pgoapi /src/pgoapi/
+RUN git clone -b $BUILD_BRANCH https://github.com/nbq/POGOProtos /src/pogoprotos/
+RUN git clone https://github.com/nbq/pgoapi /src/pgoapi/
 RUN cp /src/pogoprotos/run.sh /src/run.sh
 RUN chmod +x /src/run.sh
 
